@@ -84,6 +84,16 @@ let simeonArry = simeon.forEach(elem =>{
 
 
 
+// Read text in your text 
+
+document.getElementById('readText').onclick = () =>{
+    let TextAreaVal = document.getElementById('textArea').value
+    let vocie = new SpeechSynthesisUtterance(TextAreaVal)
+    console.log(vocie);
+    speechSynthesis.speak(vocie)
+    
+}
+
 
 
 
